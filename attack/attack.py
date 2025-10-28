@@ -1,16 +1,9 @@
 import requests
 import threading
 import time
-#def test():
-#    response = requests.get('http://127.0.0.1:8000/')
-#    print(response.status_code)  # Статус ответа (200 — OK)
-#    print(response.text)
-#
-
-#test()
 
 
-TARGET_URL = "http://127.0.0.1:5000/"
+TARGET_URL = "http://app-container:5000/"
 NUM_THREADS = 10  # Количество потоков, которые будут отправлять запросы
 REQUEST_INTERVAL = 0.5  # Пауза между запросами внутри одного потока (чтобы не убить атакующий комп)
 

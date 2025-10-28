@@ -1,0 +1,11 @@
+services:
+  app:
+    build: app/
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/app  # для разработки с hot-reload
+    environment:
+      - FLASK_ENV=development
+  attack:
+    build: attack/

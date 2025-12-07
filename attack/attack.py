@@ -3,8 +3,8 @@ import threading
 import time
 
 
-TARGET_URL = "http://app-container:5000/"
-NUM_THREADS = 10  # Количество потоков, которые будут отправлять запросы
+TARGET_URL = "http://flask-app:5000/"
+NUM_THREADS = 100  # Количество потоков, которые будут отправлять запросы
 REQUEST_INTERVAL = 0.5  # Пауза между запросами внутри одного потока (чтобы не убить атакующий комп)
 
 print(f"[*] Запуск DoS-атаки на {TARGET_URL}")
